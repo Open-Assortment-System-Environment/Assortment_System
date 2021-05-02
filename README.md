@@ -1,5 +1,6 @@
 [1]: https://github.com/tobiasfalk/Boxes-LC/blob/master/img/70x210x40.png
 [2]: https://github.com/tobiasfalk/Boxes-LC/blob/master/img/70x70x40.png
+[3]: https://github.com/tobiasfalk/Boxes-LC/blob/master/README.md
 
 # __Assortment System__
 This is an complete free system for storing small parts.  
@@ -10,10 +11,10 @@ This is an complete free system for storing small parts.
 
 ## __State__
 
-This project is currently in the state to design the [boxes](https://github.com/tobiasfalk/Boxes-LC/blob/master/README.md)
+This project is currently in the state to design the [boxes][3]
 
 ## __Plans__
-The next steps after getting the [box](https://github.com/tobiasfalk/Boxes-LC/blob/master/README.md) design to an state where all important things are finalized is to designed the drawers of an cabinet and an cabinet where the boxes are directly used as drawer. After that an cabinet will be designed around the drawers.  
+The next steps after getting the [box][3] design to an state where all important things are finalized is to designed the drawers of an cabinet and an cabinet where the boxes are directly used as drawer. After that an cabinet will be designed around the drawers.  
 
 I want to include into the drwaers 2 things:
 
@@ -21,7 +22,7 @@ I want to include into the drwaers 2 things:
 
 2) LED in to one of the sides and in to the back or front to display witch box exactly has the wanted part.
 
-## [__Boxes-LC__](https://github.com/tobiasfalk/Boxes-LC/blob/master/README.md)  
+## [__Boxes-LC__][3]  
 They are designet to be lasercut.
 details under the folder boxes in the README  
 ![Image][1]  
