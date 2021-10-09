@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3
 import git
 from git import Repo
 import fileinput
