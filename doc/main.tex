@@ -1,0 +1,65 @@
+%thesis/more
+\documentclass{report}
+%character set selection
+\usepackage[utf8]{inputenc}
+
+% layout setting
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=20mm,
+}
+
+%hyper ref setup
+\usepackage{hyperref}
+
+%figur and graphics packages
+\usepackage{graphicx}
+
+%set up grpahicspath
+\graphicspath{ {./images/} }
+
+%dummy text
+\usepackage{blindtext}
+
+%opening
+\title{TITEL\\
+{\Large UNDERTITEL}}
+\author{AUTHOR}
+\date{DATE}
+
+\begin{document}
+
+\maketitle
+
+\include{abstract/abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+\newpage
+\listoftables
+
+%include first chapter
+\include{chapter_1/chapter_1}
+
+%include second chapter
+\include{chapter_2/chapter_2}
+
+% start appendix section
+\appendix
+%include appendix chapter
+\include{appendix/appendix}
+
+%include bibliography
+\bibliographystyle{plain}
+\bibliography{ref} % you need to create an re.bib file with the bibilogefy entry in it
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+
+\end{document}
