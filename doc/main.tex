@@ -25,11 +25,23 @@
 %dummy text
 \usepackage{blindtext}
 
+%add drawing packeg
+\usepackage{tikz}
+
+%add url ref packeg
+\usepackage{url}
+
+
+\ifx\du\undefined
+\newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+
 %opening
 \title{Assortment System\\
 {\Large }}
 \author{Tobias Falk}
-\date{DATE}
+%\date{DATE}
 
 \begin{document}
 
@@ -46,15 +58,15 @@
 \listoftables
 
 %include first chapter
-\include{chapter_1/chapter_1}
+\include{software/software}
 
 %include second chapter
-\include{chapter_2/chapter_2}
+\include{hardware/hardware}
 
 % start appendix section
-\appendix
+%\appendix
 %include appendix chapter
-\include{appendix/appendix}
+%\include{appendix/appendix}
 
 %include bibliography
 \bibliographystyle{plain}

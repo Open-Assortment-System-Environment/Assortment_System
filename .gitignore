@@ -13,3 +13,7 @@ doc/appendix/appendix.aux
 doc/abstract/abstract.aux
 doc/main.synctex.gz
 doc/main.bbl
+doc/hardware/chapter_2.aux
+doc/software/chapter_1.aux
+doc/software/software.aux
+doc/hardware/hardware.aux
