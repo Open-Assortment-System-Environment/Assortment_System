@@ -3,15 +3,51 @@
 %character set selection
 \usepackage[utf8]{inputenc}
 
+%opening
+\newcommand{\Titel}{Assortment System}
+\newcommand{\Date}{14 Nov 2021}
+\newcommand{\Version}{Vers.: 0.2}
+
+
+\title{\Titel\\
+	{\Large \Version }}
+\author{Tobias Falk}
+\date{\Date}
+
 % layout setting
 \usepackage{geometry}
 \geometry{
 	a4paper,
 	left=15mm,
 	right=15mm,
-	top=15mm,
-	bottom=15mm,
+	top=25mm,
+	bottom=25mm,
+	%showframe,
 }
+
+%Header adn Footer setings
+\usepackage{fancyhdr}
+\usepackage[page]{totalcount}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\Version}
+\chead{\Titel}
+\lhead{\Date}
+\cfoot{\thepage/\totalpages}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%empty page command
+\usepackage{afterpage}
+\newcommand\emptypage{
+	\null
+	\thispagestyle{empty}
+	\addtocounter{page}{-1}
+	\newpage
+}
+
 
 %hyper ref setup
 \usepackage{hyperref}
@@ -37,25 +73,25 @@
 \fi
 \setlength{\du}{15\unitlength}
 
-%opening
-\title{Assortment System\\
-{\Large 0.1 }}
-\author{Tobias Falk}
-%\date{DATE}
-
 \begin{document}
-
+\pagenumbering{Roman}
 \maketitle
+\emptypage
 
 \include{abstract/abstract}
 
 \newpage
 \tableofcontents
+\thispagestyle{fancy}
 
 \newpage
 \listoffigures
+\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{List of Figures}
 \newpage
 \listoftables
+\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{List of Tables}
 
 %include first chapter
 \include{software/software}
@@ -73,5 +109,6 @@
 \bibliography{ref} % you need to create an re.bib file with the bibilogefy entry in it
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
+\thispagestyle{fancy}
 
 \end{document}
