@@ -2,6 +2,7 @@
 \chapter{Software}
 \pagenumbering{arabic} 
 \thispagestyle{fancy}
+GitHub: {\url{https://github.com/tobiasfalk/Assortment\_System\_Server.git}}\newline\newline
 Here we describe the software design and method of saving the information about the different parts.
 
 \section{Design Structure}
@@ -285,7 +286,7 @@ The basic idea is that we have one server where a SQL database runs and that the
 On the Server there are two things, the SQL database, where all the information is stored and the middle ware, witch provides an REST API interface for the DB.
 
 \subsection{SQL database}
-The SQL databse is a Postgessql\footnote{Postgessql webpage:{\url{https://www.postgresql.org/}}} database and is designed in an program named PgModeler\footnote{PgModeler webpage: :{\url{https://pgmodeler.io/}}}. It has the main task of safeing the known information about the parts that are maneged in the system.
+The SQL databse is a Postgessql\footnote{Postgessql webpage:{\url{https://www.postgresql.org/}}} database and is designed in an program named PgModeler\footnote{PgModeler webpage: {\url{https://pgmodeler.io/}}}. It has the main task of safeing the known information about the parts that are maneged in the system.
 \newline\newline
 The DB is spilt in to 6 schemas:
 \begin{itemize}
